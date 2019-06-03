@@ -92,3 +92,19 @@ ff<-function(i,j){
 sum(outer(1:10,1:10,ff))
 
 #6
+
+#a
+f1<-function(x,y){
+  z<-outer(x,y,"-")
+  z<-z>0
+  rowSums(z)
+}
+
+#b
+
+f2<-function(x,y){
+  ff2<-function(a){sum(a>y)}
+  sapply(x,ff2)
+}
+
+#c

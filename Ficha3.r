@@ -74,3 +74,22 @@ f7 <- function (x){
 which(apply(mat,1,f7) == 2)
 
 #d
+
+which(outer(colSums(mat),colSums(mat),"+")>75, arr.ind=T)
+
+
+#5
+
+#a
+sum(outer((1:20)^4 , 3+(1:5), "/"))
+
+#b
+sum((1:20)^4 / 3+outer(1:20,1:5,"*")
+
+#c
+ff<-function(i,j){
+(i>=j)*i^4/(3+i*j)
+}
+sum(outer(1:10,1:10,ff))
+
+#6

@@ -53,3 +53,24 @@ colSums(A); rowSums(B)
 apply(A,2,sum); apply(B,1,sum)
 
 #c
+
+C<-outer(seq(0,20,5),seq(0,20,5),"-")
+D<-C
+D[D>10] <- 75
+
+#4
+
+#a
+
+length(mat[mat>4])
+
+#b
+apply(mat,2,max)
+
+#c
+
+f7 <- function (x){
+  sum(x==7)}
+which(apply(mat,1,f7) == 2)
+
+#d

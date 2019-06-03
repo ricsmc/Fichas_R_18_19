@@ -35,3 +35,21 @@ M<-m
 SM<-m[c(T,F),c(F,T)];SM
 
 #d
+
+which(M%%2 == 0, arr.ind=0)
+
+#3
+
+#a
+A<-outer(0:4,0:4,"+")
+
+B<-outer(1:4,0:4,"*")
+
+#b
+
+apply(B,2,mean)
+
+colSums(A); rowSums(B)
+apply(A,2,sum); apply(B,1,sum)
+
+#c

@@ -20,3 +20,28 @@ tapply(iris$Petal.Length, iris$Species, mean)
 hist(iris$Petal.Length[which(iris$Species == "virginica")])
 
 #f
+
+o<-order(iris$Petal.Length)
+df<-data.frame(iris$Petal.Length[o],Petal.Width=iris$Petal.Width,Species=iris$Species)
+
+
+#3
+
+#a
+max(airquality$Temp[which(airquality$Month == 7)])
+
+#b
+tapply(airquality$Temp, airquality$Month, max)
+
+#c
+s<-split(airquality$Temp, airquality$Month, drop=T)
+sapply(s,max)
+
+#d
+length(which(is.na(airquality$Ozone)))
+length(which(is.na(airquality$Solar.R)))
+
+#e
+which(is.na(airquality$Ozone)
+
+#f

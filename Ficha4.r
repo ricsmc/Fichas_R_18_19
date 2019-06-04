@@ -45,3 +45,9 @@ length(which(is.na(airquality$Solar.R)))
 which(is.na(airquality$Ozone)
 
 #f
+novo<-data.frame(airquality[rowSums(is.na(airquality))==0,])
+
+#g
+tapply(novo$Solar.R, novo$Month, max)
+tapply(novo$Solar.R, novo$Month, min)
+tapply(novo$Solar.R, novo$Month, mean)
